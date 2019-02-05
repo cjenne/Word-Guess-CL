@@ -26,10 +26,11 @@ var guessedLetters = "";
 function game() {
     let newWord = catPunWords[Math.floor(Math.random() * catPunWords.length)];
     originalWord = newWord;
-    console.log(newWord);
+//     console.log(newWord);
     myWord = new Word(newWord);
     console.log(myWord.returnstring());
     guesses = 8;
+    guessedLetters = ""
     prompt();
 }
 
